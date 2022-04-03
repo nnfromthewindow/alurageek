@@ -1,0 +1,129 @@
+@media only screen and (max-width: 577px) {
+  .lupaResponsive {
+    display: block;
+  }
+
+  .search__input {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .banner {
+    height: 45vw;
+  }
+
+  .banner__description {
+    padding-top: 20%;
+  }
+
+  .btnLogin {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+
+  .producto img {
+    width: 164px;
+    height: 174px;
+  }
+
+  .listaProductos {
+    flex-wrap: wrap;
+  }
+
+  .banner h1 {
+    font-size: 7vw;
+  }
+  .banner h3 {
+    font-size: 2.9vw;
+  }
+
+  .contacto__logoContainer {
+    flex-direction: column;
+  }
+
+  .contacto__logoContainer--list {
+    margin-top: 2vh;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  .producto:nth-child(6) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 998px) {
+  .producto:nth-child(5) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 569px) {
+  .contactoContainer {
+    flex-direction: column;
+
+    width: 100%;
+  }
+  .contacto__logoContainer--list {
+    height: 20vh;
+    margin-bottom: 4vh;
+  }
+  .contacto__logoContainer {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contacto__logo {
+    margin: 0 auto;
+  }
+  .formulario {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .banner {
+    height: 192px;
+  }
+
+  .producto img {
+    width: 156px;
+    height: 174px;
+  }
+
+  .banner h1 {
+    font-size: 22px;
+  }
+  .banner h3 {
+    font-size: 14px;
+  }
+
+  .listaProductos {
+    justify-content: space-around;
+  }
+
+  .contacto__logoContainer--img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 288px) {
+  .header {
+    flex-direction: column;
+    padding-bottom: 12vh;
+    margin-top: 1vh;
+  }
+
+  .lupaResponsive {
+    margin-top: 1vh;
+  }
+  .btnLogin {
+    margin-top: 0.5vh;
+  }
+}
