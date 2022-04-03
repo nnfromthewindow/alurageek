@@ -24,6 +24,10 @@
   text-decoration: none;
 }
 
+.galeriaItem__titleContainer h3 a:visited {
+  color: #2a7ae4;
+}
+
 .galeriaItem__titleContainer h3 {
   color: #2a7ae4;
   font-family: "Raleway", sans-serif;

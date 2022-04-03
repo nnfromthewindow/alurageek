@@ -41,12 +41,16 @@
   width: 50%;
 }
 
-.contacto__menu--item {
+.contacto__menu--item a {
   color: #464646;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 500;
   width: 100%;
+}
+
+.contacto__menu--item a:visited {
+  color: #464646;
 }
 
 .contacto__menu--item:hover {
