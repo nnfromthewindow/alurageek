@@ -55,15 +55,15 @@
   transition: 100ms;
 }
 
+.contacto__menu--item a {
+  text-decoration: none;
+}
+
 .contacto__menu {
   display: flex;
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
-}
-
-.contacto__menu a {
-  text-decoration: none;
 }
 
 .formulario {
