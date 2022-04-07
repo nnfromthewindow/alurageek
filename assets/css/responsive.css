@@ -126,4 +126,16 @@
   .btnLogin {
     margin-top: 0.5vh;
   }
+
+  .loginContainer a {
+    margin: 0 auto;
+
+    min-width: 90%;
+  }
+  .loginContainer button {
+    min-width: fit-content;
+  }
+  .loginInput {
+    min-width: 90%;
+  }
 }
