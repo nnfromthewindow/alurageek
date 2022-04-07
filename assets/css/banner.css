@@ -45,3 +45,7 @@
   transform: scale(1.05, 1.05);
   transition: 100ms;
 }
+.btn:active {
+  background-color: #2a6aff;
+  transition: 200ms;
+}

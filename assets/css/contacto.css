@@ -54,7 +54,6 @@
 }
 
 .contacto__menu--item:hover {
-  text-shadow: 1px 1px 5px;
   transform: scale(1.02, 1.02);
   transition: 100ms;
 }

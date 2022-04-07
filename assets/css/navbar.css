@@ -56,7 +56,6 @@
 }
 
 .search__input i:hover {
-  text-shadow: 2px 2px 2px;
   transform: scale(1.2, 1.2);
   transition: 200ms;
 }
@@ -86,7 +85,6 @@
   display: none;
 }
 .lupaResponsive:hover {
-  text-shadow: 2px 2px 2px;
   transform: scale(1.2, 1.2);
   transition: 100ms;
 }

@@ -1,0 +1,56 @@
+.login {
+  background-color: #e5e5e5;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+}
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+}
+.loginContainer a {
+  text-align: center;
+}
+.loginContainer button {
+  background-color: #2a7ae4;
+  border-style: none;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  height: 3vw;
+  margin: 0 auto;
+  min-height: 41px;
+  min-width: 275px;
+  outline: none;
+  width: 25%;
+}
+
+.loginContainer button:active {
+  background-color: #2a6aff;
+}
+
+.loginTitle {
+  color: #464646;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 auto;
+  padding-bottom: 2vh;
+  width: fit-content;
+}
+
+.loginInput {
+  border-style: none;
+  color: #464646;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 auto;
+  margin-bottom: 2vh;
+  min-height: 41px;
+  min-width: 275px;
+  height: 3vw;
+  padding-left: 10px;
+  width: 25%;
+  outline: navajowhite;
+}
