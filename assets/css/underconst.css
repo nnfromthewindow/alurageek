@@ -1,0 +1,23 @@
+.underconst {
+  width: 100%;
+  padding-bottom: 5vh;
+  padding-top: 5vh;
+  text-align: center;
+}
+
+.underconst img {
+  border-radius: 50%;
+  height: 50vw;
+  min-height: 10vw;
+  min-width: 10vw;
+  width: 50vw;
+  object-fit: cover;
+}
+
+.underconst h1 {
+  color: #464646;
+  font-family: "Raleway", sans-serif;
+  font-size: 5vw;
+  font-weight: 700;
+  margin-top: 2vh;
+}

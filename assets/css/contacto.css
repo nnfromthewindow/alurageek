@@ -85,9 +85,14 @@
   font-size: 16px;
   font-weight: 400;
   height: 56px;
+  outline: none;
   padding-left: 10px;
   padding-top: 12px;
   width: 100%;
+}
+
+.formulario__nombre input:focus {
+  border: 2px solid #2a7be48c;
 }
 
 .formulario__mensaje textarea {
@@ -97,9 +102,14 @@
   font-weight: 400;
   width: 100%;
   height: 82px;
+  outline: none;
   padding-left: 10px;
   padding-top: 10px;
   resize: none;
+}
+
+.formulario__mensaje textarea:focus {
+  border: 2px solid #2a7be48c;
 }
 
 .formulario__mensaje textarea::placeholder {

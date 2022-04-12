@@ -55,5 +55,12 @@
   height: 3vw;
   padding-left: 10px;
   width: 25%;
-  outline: navajowhite;
+  outline: none;
+}
+
+.loginInput:focus {
+  border-bottom: 2px solid #2a7be48c;
+  border-left: 2px solid none;
+  border-right: 2px solid none;
+  border-top: 2px solid none;
 }
