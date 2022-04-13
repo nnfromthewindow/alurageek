@@ -20,6 +20,8 @@
   font-family: "Raleway", sans-serif;
   font-size: 32px;
   font-weight: bold;
+  text-align: center;
+  width: fit-content;
 }
 
 .tituloProducto__contenedor button {
@@ -61,6 +63,7 @@
   transition: 200ms;
 }
 .producto img {
+  margin: 0 auto;
   width: 176px;
   height: 174px;
 }
@@ -87,8 +90,8 @@
 .listaProductos {
   display: grid;
   margin: 0 auto;
-  width: fit-content;
-  column-gap: 3vw;
+  width: 100%;
+  column-gap: 1.5vw;
 }
 .listaProductos li {
   align-items: center;
