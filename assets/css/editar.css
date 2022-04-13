@@ -1,0 +1,117 @@
+.productosLista {
+  background-color: #e5e5e5;
+  padding-bottom: 8vh;
+  padding-top: 5vw;
+}
+
+.productosLista__contenedor {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.tituloProducto__contenedor {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tituloProducto__contenedor h1 {
+  color: #464646;
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.tituloProducto__contenedor button {
+  background-color: #2a7ae4;
+  border-color: #2a7ae4;
+  border-style: solid;
+  border-width: 1px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  height: 40px;
+  min-width: 133px;
+  padding: 0;
+  width: 13vw;
+}
+.tituloProducto__contenedor button:hover {
+  transform: scale(1.05, 1.05);
+  transition: 100ms;
+}
+.tituloProducto__contenedor button:active {
+  background-color: #2a6aff;
+  transition: 200ms;
+}
+
+.producto {
+  margin-top: 2vh;
+}
+
+.producto a {
+  text-decoration: none;
+}
+
+.producto div img {
+  object-fit: cover;
+}
+
+.producto:hover {
+  transform: scale(1.03, 1.03);
+  transition: 200ms;
+}
+.producto img {
+  width: 176px;
+  height: 174px;
+}
+
+.nombreProducto {
+  color: #464646;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.precio {
+  color: #464646;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 0.5vh;
+}
+
+.listaProductos__contenedor {
+  justify-content: space-around;
+}
+
+.listaProductos {
+  display: grid;
+  margin: 0 auto;
+  width: fit-content;
+  column-gap: 3vw;
+}
+.listaProductos li {
+  align-items: center;
+}
+
+.producto__imgContainer {
+  width: 176px;
+  height: 174px;
+}
+
+.editContainer {
+  position: relative;
+  bottom: 170px;
+  left: 85px;
+  width: fit-content;
+}
+.editContainer i {
+  color: white;
+  margin-left: 20px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.527);
+}
+.editContainer i:hover {
+  color: dodgerblue;
+  transition: 200ms;
+  transform: scale(1.05, 1.05);
+}
