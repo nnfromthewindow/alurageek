@@ -1,7 +1,7 @@
 .agregarProducto {
   background-color: #e5e5e5;
-  padding-bottom: 5vh;
-  padding-top: 5vh;
+  padding-bottom: 2vh;
+  padding-top: 2vh;
 }
 
 .agregarProducto__contenedor {
@@ -24,15 +24,36 @@
   width: 301px;
 }
 
-.cuadroArrastre i {
+.imgCarpeta i {
   color: #c8c8c8;
+
+  margin: 0 auto;
+  position: relative;
+  top: 50px;
+  transform: scale(3, 3);
+}
+
+.imgMas i {
+  color: #c8c8c8;
+
   left: 47%;
   margin: 0 auto;
   position: relative;
   top: 50px;
   transform: scale(3, 3);
 }
+
 .cuadroArrastre h3 {
+  color: #c8c8c8;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 auto;
+  margin-top: 70px;
+  text-align: center;
+  width: 80%;
+}
+.cuadroArrastre h4 {
   color: #c8c8c8;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
@@ -44,11 +65,11 @@
 }
 .cuadroFlex {
   display: flex;
-  padding-bottom: 5vh;
-  padding-top: 5vh;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
 }
 
-.cuadroFlex h4 {
+.cuadroFlex h5 {
   color: #464646;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
@@ -91,11 +112,47 @@
   font-family: "Raleway", sans-serif;
   font-size: 12px;
   font-weight: 400;
+  margin: 0;
   position: relative;
   left: 12px;
   top: 19px;
+  width: fit-content;
 }
 
-.textarea__descripcion {
-  height: 82px;
+.input__nuevoDescripcion textarea {
+  color: #464646;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 51px;
+  min-height: 82px;
+  max-width: 100%;
+  min-width: 100%;
+  padding-left: 15px;
+  padding-top: 20px;
+}
+
+.input__nuevoDescripcion h4 {
+  color: #464646;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+  left: 12px;
+  top: 19px;
+  width: fit-content;
+}
+.agregarProd__btn {
+  background-color: #2a7ae4;
+  border-style: none;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  height: 3vw;
+  margin: 0 auto;
+  min-height: 41px;
+  min-width: 275px;
+  outline: none;
+  width: 100%;
 }
