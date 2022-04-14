@@ -194,6 +194,9 @@
   .listaProductos {
     grid-template-columns: 1fr;
   }
+  .producto {
+    margin: 5vh auto 0 auto;
+  }
   .producto__imgContainer {
     text-align: center;
     width: 140px;
@@ -215,10 +218,6 @@
 @media only screen and (min-width: 360px) {
   .listaProductos {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .producto__imgContainer {
-    text-align: left;
   }
 }
 @media only screen and (min-width: 600px) {

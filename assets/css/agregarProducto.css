@@ -1,0 +1,101 @@
+.agregarProducto {
+  background-color: #e5e5e5;
+  padding-bottom: 5vh;
+  padding-top: 5vh;
+}
+
+.agregarProducto__contenedor {
+  margin: 0 auto;
+  width: 559px;
+}
+
+.agregarProducto__contenedor h1 {
+  color: #464646;
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  width: fit-content;
+}
+.cuadroArrastre {
+  background-color: white;
+  border: 1px dashed #c8c8c8;
+  height: 152px;
+  width: 301px;
+}
+
+.cuadroArrastre i {
+  color: #c8c8c8;
+  left: 47%;
+  margin: 0 auto;
+  position: relative;
+  top: 50px;
+  transform: scale(3, 3);
+}
+.cuadroArrastre h3 {
+  color: #c8c8c8;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 auto;
+  margin-top: 70px;
+  text-align: center;
+  width: 80%;
+}
+.cuadroFlex {
+  display: flex;
+  padding-bottom: 5vh;
+  padding-top: 5vh;
+}
+
+.cuadroFlex h4 {
+  color: #464646;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: auto 8px;
+}
+.searchFileBtn {
+  background-color: #e5e5e5;
+  border: 1px solid #2a7ae4;
+  color: #2a7ae4;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 51px;
+  margin: auto auto auto 0;
+  width: 229px;
+}
+
+.formularioAgregar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input__nuevoNombre input,
+.input__nuevoPrecio input {
+  color: #464646;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 51px;
+  padding-left: 15px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.input__nuevoNombre h4,
+.input__nuevoPrecio h4 {
+  color: #464646;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+  left: 12px;
+  top: 19px;
+}
+
+.textarea__descripcion {
+  height: 82px;
+}
