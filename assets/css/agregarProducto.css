@@ -88,6 +88,12 @@
   width: 229px;
 }
 
+.searchFileBtn:hover {
+  color: white;
+  background-color: #2a7ae4;
+  transition: 200ms;
+}
+
 .formularioAgregar {
   display: flex;
   flex-direction: column;
@@ -101,9 +107,16 @@
   font-size: 16px;
   font-weight: 400;
   height: 51px;
+  outline: none;
   padding-left: 15px;
   padding-top: 10px;
   width: 100%;
+}
+
+.input__nuevoNombre input:focus,
+.input__nuevoPrecio input:focus,
+.input__nuevoDescripcion textarea:focus {
+  border: 2px solid #2a7be48c;
 }
 
 .input__nuevoNombre h4,
@@ -128,6 +141,7 @@
   min-height: 82px;
   max-width: 100%;
   min-width: 100%;
+  outline: none;
   padding-left: 15px;
   padding-top: 20px;
 }
@@ -155,4 +169,8 @@
   min-width: 275px;
   outline: none;
   width: 100%;
+}
+.agregarProd__btn:hover {
+  background-color: #235eac;
+  transition: 200ms;
 }

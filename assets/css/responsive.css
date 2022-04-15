@@ -1,6 +1,8 @@
 @media only screen and (max-width: 577px) {
   .lupaResponsive {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
 
   .search__input {
@@ -369,7 +371,7 @@
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1200px) {
   .agregarProducto__contenedor {
     width: 50%;
   }
