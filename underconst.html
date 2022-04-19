@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>AluraGeek - Login</title>
+    <title>AluraGeek - Pagina en construcción</title>
     <link href="./assets/css/normalize.css" rel="stylesheet" />
     <link href="./assets/css/reset.css" rel="stylesheet" />
     <link href="./assets/css/banner.css" rel="stylesheet" />
@@ -22,19 +22,26 @@
 <body>
     <header class="header">
         <div class="search">
-            <a href="./index.html"><div class="logo"></div></a>
+            <div class="logo"></div>
             <div class="search__input">
                 <input type="text" placeholder="¿Qué deseas buscar?">
-                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a><i class="fa-solid fa-magnifying-glass"></i></a>
                 </input>
             </div>
         </div>
         <div class="contenedorLogin">
-        <a href=""><button class="btnLogin">Login</button></a>
+        <a href="./login.html"><button class="btnLogin">Login</button></a>
         </div>
         <div class="lupaResponsive">
-        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+          <button type="button" class="searchBtn" data-searchBtn><i class="fa-solid fa-magnifying-glass"></i></button>
+            
         </div>
+        <div class="searchResponsive" data-search>
+                <div class="searchResponsive__container" >
+                    <input type="text" placeholder="¿Qué deseas buscar?" data-searchInput>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
     </header>
     <section class="underconst">
         <img src="https://images.unsplash.com/photo-1615465502839-71d5974f5087?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
@@ -76,5 +83,6 @@
         <h4>2022</h4>
 
     </footer>
+    <script type="text/javascript" src="./assets/js/search.js"></script>
 </body>
 </html>

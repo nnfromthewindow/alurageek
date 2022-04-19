@@ -21,26 +21,33 @@
 <body>
     <header class="header">
         <div class="search">
-            <a href="./index.html"><div class="logo"></div></a>
+            <div class="logo"></div>
             <div class="search__input">
                 <input type="text" placeholder="¿Qué deseas buscar?">
-                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a><i class="fa-solid fa-magnifying-glass"></i></a>
                 </input>
             </div>
         </div>
         <div class="contenedorLogin">
-        <a href=""><button class="btnLogin">Login</button></a>
+        <a href="./login.html"><button class="btnLogin">Login</button></a>
         </div>
         <div class="lupaResponsive">
-        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+          <button type="button" class="searchBtn" data-searchBtn><i class="fa-solid fa-magnifying-glass"></i></button>
+            
         </div>
+        <div class="searchResponsive" data-search>
+                <div class="searchResponsive__container" >
+                    <input type="text" placeholder="¿Qué deseas buscar?" data-searchInput>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
     </header>
     <section class="login">
         <form class="loginContainer">
             <h2 class="loginTitle">Iniciar Sesión</h2>
             <input type="email" class="loginInput" id="email" name="email" placeholder="Escriba su correo electrónico" required>
             <input type="password" class="loginInput" id="password" name="password" placeholder="Escriba su contraseña" required>
-            <a href=""><button type="submit" id="entrar">Entrar</button></a>
+            <a href="./editar.html"><button type="button" id="entrar">Entrar</button></a>
         </form>
     </section>
     <section class="contacto">
@@ -79,5 +86,6 @@
         <h4>2022</h4>
 
     </footer>
+    <script type="text/javascript" src="./assets/js/search.js"></script>
 </body>
 </html>

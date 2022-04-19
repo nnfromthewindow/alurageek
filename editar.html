@@ -8,7 +8,6 @@
     <link href="./assets/css/normalize.css" rel="stylesheet" />
     <link href="./assets/css/reset.css" rel="stylesheet" />
     <link href="./assets/css/banner.css" rel="stylesheet" />
-    <link href="./assets/css/galeria.css" rel="stylesheet" />
     <link href="./assets/css/navbar.css" rel="stylesheet" />
     <link href="./assets/css/editar.css" rel="stylesheet" />
     <link href="./assets/css/login.css" rel="stylesheet" />
@@ -23,31 +22,38 @@
 <body>
     <header class="header">
         <div class="search">
-            <a href="./index.html"><div class="logo"></div></a>
+            <div class="logo"></div>
             <div class="search__input">
                 <input type="text" placeholder="¿Qué deseas buscar?">
-                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a><i class="fa-solid fa-magnifying-glass"></i></a>
                 </input>
             </div>
         </div>
         <div class="contenedorLogin">
-        <a href=""><button class="btnLogin">Login</button></a>
+        <a href="./login.html"><button class="btnLogin">Login</button></a>
         </div>
         <div class="lupaResponsive">
-        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+          <button type="button" class="searchBtn" data-searchBtn><i class="fa-solid fa-magnifying-glass"></i></button>
+            
         </div>
+        <div class="searchResponsive" data-search>
+                <div class="searchResponsive__container" >
+                    <input type="text" placeholder="¿Qué deseas buscar?" data-searchInput>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
     </header>
    <section class="productosLista">
     <div class="productosLista__contenedor">
         <div class="tituloProducto__contenedor">
             <h1>Todos los productos</h1>
-            <button>Agregar producto</button>    
+            <a href="./agregarproducto.html"><button>Agregar producto</button></a>    
         </div>
         <div class="listaProductos__contenedor">
-            <ul class="listaProductos">
-                    <li class="producto">
-                        <div class="producto__imgContainer">
-                            <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+            <ul class="listaProductosEditables">
+                    <li class="productoEdit">
+                        <div class="productoEdit__imgContainer">
+                            <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="" class="imgEditar">
                             <div class="editContainer">
                                 <i class="fa-solid fa-trash"></i>
                                 <i class="fa-solid fa-pencil"></i>
@@ -57,9 +63,9 @@
                         <h3 class="precio">$60,00</h3>
                         <a href="./producto.html"><h3 class="verProducto">Ver Producto</h3></a>
                     </li>
-                    <li class="producto">
-                        <div class="producto__imgContainer">
-                            <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                    <li class="productoEdit">
+                        <div class="productoEdit__imgContainer">
+                            <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="" class="imgEditar">
                             <div class="editContainer">
                                 <i class="fa-solid fa-trash"></i>
                                 <i class="fa-solid fa-pencil"></i>
@@ -69,9 +75,9 @@
                         <h3 class="precio">$60,00</h3>
                         <a href="./producto.html"><h3 class="verProducto">Ver Producto</h3></a>
                     </li>
-                    <li class="producto">
-                        <div class="producto__imgContainer">
-                            <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                    <li class="productoEdit">
+                        <div class="productoEdit__imgContainer">
+                            <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="" class="imgEditar">
                             <div class="editContainer">
                                 <i class="fa-solid fa-trash"></i>
                                 <i class="fa-solid fa-pencil"></i>
@@ -81,9 +87,9 @@
                         <h3 class="precio">$60,00</h3>
                         <a href="./producto.html"><h3 class="verProducto">Ver Producto</h3></a>
                     </li>
-                    <li class="producto">
-                        <div class="producto__imgContainer">
-                            <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                    <li class="productoEdit">
+                        <div class="productoEdit__imgContainer">
+                            <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="" class="imgEditar">
                             <div class="editContainer">
                                 <i class="fa-solid fa-trash"></i>
                                 <i class="fa-solid fa-pencil"></i>
@@ -93,9 +99,9 @@
                         <h3 class="precio">$60,00</h3>
                         <a href="./producto.html"><h3 class="verProducto">Ver Producto</h3></a>
                     </li>
-                    <li class="producto">
-                        <div class="producto__imgContainer">
-                            <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                    <li class="productoEdit">
+                        <div class="productoEdit__imgContainer">
+                            <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="" class="imgEditar">
                             <div class="editContainer">
                                 <i class="fa-solid fa-trash"></i>
                                 <i class="fa-solid fa-pencil"></i>
@@ -105,9 +111,9 @@
                         <h3 class="precio">$60,00</h3>
                         <a href="./producto.html"><h3 class="verProducto">Ver Producto</h3></a>
                     </li>
-                    <li class="producto">
-                        <div class="producto__imgContainer">
-                            <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                    <li class="productoEdit">
+                        <div class="productoEdit__imgContainer">
+                            <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="" class="imgEditar">
                             <div class="editContainer">
                                 <i class="fa-solid fa-trash"></i>
                                 <i class="fa-solid fa-pencil"></i>
@@ -117,9 +123,9 @@
                         <h3 class="precio">$60,00</h3>
                         <a href="./producto.html"><h3 class="verProducto">Ver Producto</h3></a>
                     </li>
-                    <li class="producto">
-                        <div class="producto__imgContainer">
-                            <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                    <li class="productoEdit">
+                        <div class="productoEdit__imgContainer">
+                            <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="" class="imgEditar">
                             <div class="editContainer">
                                 <i class="fa-solid fa-trash"></i>
                                 <i class="fa-solid fa-pencil"></i>
@@ -129,9 +135,9 @@
                         <h3 class="precio">$60,00</h3>
                         <a href="./producto.html"><h3 class="verProducto">Ver Producto</h3></a>
                     </li>
-                    <li class="producto">
-                        <div class="producto__imgContainer">
-                            <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                    <li class="productoEdit">
+                        <div class="productoEdit__imgContainer">
+                            <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="" class="imgEditar">
                             <div class="editContainer">
                                 <i class="fa-solid fa-trash"></i>
                                 <i class="fa-solid fa-pencil"></i>
@@ -141,9 +147,9 @@
                         <h3 class="precio">$60,00</h3>
                         <a href="./producto.html"><h3 class="verProducto">Ver Producto</h3></a>
                     </li>
-                    <li class="producto">
-                        <div class="producto__imgContainer">
-                            <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                    <li class="productoEdit">
+                        <div class="productoEdit__imgContainer">
+                            <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="" class="imgEditar">
                             <div class="editContainer">
                                 <i class="fa-solid fa-trash"></i>
                                 <i class="fa-solid fa-pencil"></i>
@@ -153,9 +159,9 @@
                         <h3 class="precio">$60,00</h3>
                         <a href="./producto.html"><h3 class="verProducto">Ver Producto</h3></a>
                     </li>
-                    <li class="producto">
-                        <div class="producto__imgContainer">
-                            <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                    <li class="productoEdit">
+                        <div class="productoEdit__imgContainer">
+                            <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="" class="imgEditar">
                             <div class="editContainer">
                                 <i class="fa-solid fa-trash"></i>
                                 <i class="fa-solid fa-pencil"></i>
@@ -165,9 +171,9 @@
                         <h3 class="precio">$60,00</h3>
                         <a href="./producto.html"><h3 class="verProducto">Ver Producto</h3></a>
                     </li>
-                    <li class="producto">
-                        <div class="producto__imgContainer">
-                            <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                    <li class="productoEdit">
+                        <div class="productoEdit__imgContainer">
+                            <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="" class="imgEditar">
                             <div class="editContainer">
                                 <i class="fa-solid fa-trash"></i>
                                 <i class="fa-solid fa-pencil"></i>
@@ -177,69 +183,9 @@
                         <h3 class="precio">$60,00</h3>
                         <a href="./producto.html"><h3 class="verProducto">Ver Producto</h3></a>
                     </li>
-                    <li class="producto">
-                        <div class="producto__imgContainer">
-                            <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
-                            <div class="editContainer">
-                                <i class="fa-solid fa-trash"></i>
-                                <i class="fa-solid fa-pencil"></i>
-                            </div>
-                        </div>
-                        <h3 class="nombreProducto">Producto XYZ</h3>
-                        <h3 class="precio">$60,00</h3>
-                        <a href="./producto.html"><h3 class="verProducto">Ver Producto</h3></a>
-                    </li>
-                    <li class="producto">
-                        <div class="producto__imgContainer">
-                            <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
-                            <div class="editContainer">
-                                <i class="fa-solid fa-trash"></i>
-                                <i class="fa-solid fa-pencil"></i>
-                            </div>
-                        </div>
-                        <h3 class="nombreProducto">Producto XYZ</h3>
-                        <h3 class="precio">$60,00</h3>
-                        <a href="./producto.html"><h3 class="verProducto">Ver Producto</h3></a>
-                    </li>
-                    <li class="producto">
-                        <div class="producto__imgContainer">
-                            <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
-                            <div class="editContainer">
-                                <i class="fa-solid fa-trash"></i>
-                                <i class="fa-solid fa-pencil"></i>
-                            </div>
-                        </div>
-                        <h3 class="nombreProducto">Producto XYZ</h3>
-                        <h3 class="precio">$60,00</h3>
-                        <a href="./producto.html"><h3 class="verProducto">Ver Producto</h3></a>
-                    </li>
-                    <li class="producto">
-                        <div class="producto__imgContainer">
-                            <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
-                            <div class="editContainer">
-                                <i class="fa-solid fa-trash"></i>
-                                <i class="fa-solid fa-pencil"></i>
-                            </div>
-                        </div>
-                        <h3 class="nombreProducto">Producto XYZ</h3>
-                        <h3 class="precio">$60,00</h3>
-                        <a href="./producto.html"><h3 class="verProducto">Ver Producto</h3></a>
-                    </li>
-                    <li class="producto">
-                        <div class="producto__imgContainer">
-                            <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
-                            <div class="editContainer">
-                                <i class="fa-solid fa-trash"></i>
-                                <i class="fa-solid fa-pencil"></i>
-                            </div>
-                        </div>
-                        <h3 class="nombreProducto">Producto XYZ</h3>
-                        <h3 class="precio">$60,00</h3>
-                        <a href="./producto.html"><h3 class="verProducto">Ver Producto</h3></a>
-                    </li>
-                    <li class="producto">
-                        <div class="producto__imgContainer">
-                            <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                    <li class="productoEdit">
+                        <div class="productoEdit__imgContainer">
+                            <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="" class="imgEditar">
                             <div class="editContainer">
                                 <i class="fa-solid fa-trash"></i>
                                 <i class="fa-solid fa-pencil"></i>
@@ -291,5 +237,7 @@
         <h4>2022</h4>
 
     </footer>
+    <script type="text/javascript" src="./assets/js/search.js"></script>
+</body>
 </body>
 </html>

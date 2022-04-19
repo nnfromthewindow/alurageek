@@ -21,19 +21,26 @@
 <body>
     <header class="header">
         <div class="search">
-            <a href="./index.html"><div class="logo"></div></a>
+            <div class="logo"></div>
             <div class="search__input">
                 <input type="text" placeholder="¿Qué deseas buscar?">
-                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a><i class="fa-solid fa-magnifying-glass"></i></a>
                 </input>
             </div>
         </div>
         <div class="contenedorLogin">
-        <a href=""><button class="btnLogin">Login</button></a>
+        <a href="./login.html"><button class="btnLogin">Login</button></a>
         </div>
         <div class="lupaResponsive">
-        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+          <button type="button" class="searchBtn" data-searchBtn><i class="fa-solid fa-magnifying-glass"></i></button>
+            
         </div>
+        <div class="searchResponsive" data-search>
+                <div class="searchResponsive__container" >
+                    <input type="text" placeholder="¿Qué deseas buscar?" data-searchInput>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
     </header>
    <section class="agregarProducto">
     <div class="agregarProducto__contenedor">
@@ -104,5 +111,7 @@
         <h4>2022</h4>
 </div>
     </footer>
+    <script type="text/javascript" src="./assets/js/search.js"></script>
+</body>
 </body>
 </html>

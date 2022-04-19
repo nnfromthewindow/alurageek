@@ -1,11 +1,13 @@
 .galeria {
-  width: 90%;
+  background-color: #e5e5e5;
   margin: 0 auto;
+  width: 100%;
+  padding: 0 5%;
   padding-bottom: 5vh;
 }
 
 .galeriaItem {
-  margin-top: 5vh;
+  padding-top: 5vh;
 }
 
 .galeriaItem__titleContainer {
@@ -47,6 +49,7 @@
 }
 
 .producto {
+  display: none;
   margin-top: 2vh;
 }
 
@@ -54,17 +57,14 @@
   text-decoration: none;
 }
 
-.producto__imgContainer img {
-  object-fit: cover;
-}
-
 .producto:hover {
   transform: scale(1.03, 1.03);
   transition: 200ms;
 }
-.producto img {
+.imgStore {
   width: 176px;
   height: 174px;
+  object-fit: cover;
 }
 
 .nombreProducto {

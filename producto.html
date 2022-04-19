@@ -4,11 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>AluraGeek - Login</title>
+    <title>AluraGeek - Producto</title>
     <link href="./assets/css/normalize.css" rel="stylesheet" />
     <link href="./assets/css/reset.css" rel="stylesheet" />
     <link href="./assets/css/banner.css" rel="stylesheet" />
-    <link href="./assets/css/galeria.css" rel="stylesheet" />
     <link href="./assets/css/navbar.css" rel="stylesheet" />
     <link href="./assets/css/producto.css" rel="stylesheet" />
     <link href="./assets/css/contacto.css" rel="stylesheet" />
@@ -22,10 +21,10 @@
 <body>
     <header class="header">
         <div class="search">
-            <a href="./index.html"><div class="logo"></div></a>
+            <div class="logo"></div>
             <div class="search__input">
                 <input type="text" placeholder="¿Qué deseas buscar?">
-                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a><i class="fa-solid fa-magnifying-glass"></i></a>
                 </input>
             </div>
         </div>
@@ -33,12 +32,19 @@
         <a href="./login.html"><button class="btnLogin">Login</button></a>
         </div>
         <div class="lupaResponsive">
-        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+          <button type="button" class="searchBtn" data-searchBtn><i class="fa-solid fa-magnifying-glass"></i></button>
+            
         </div>
+        <div class="searchResponsive" data-search>
+                <div class="searchResponsive__container" >
+                    <input type="text" placeholder="¿Qué deseas buscar?" data-searchInput>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
     </header>
     <section class="productoSeleccionado">
         <div class="productoContainer">
-            <div class="producto__imgContainer">
+            <div class="productoContainerImg">
                 <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80" alt="" class="imgProducto">
             </div>
             <div class="producto__detailContainer">
@@ -50,42 +56,42 @@
         </div>
         <div class="prodsimContainer">
             <h2>Productos similares</h2>
-            <ul class="listaProductos">
-                <li class="producto">
+            <ul class="listaProdSimilar">
+                <li class="productoSimilar">
                     <img src="https://images.unsplash.com/photo-1592840496694-26d035b52b48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGNvbnNvbGVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
-                    <h3 class="nombreProducto">Producto XYZ</h3>
-                    <h3 class="precio">$60,00</h3>
-                    <a href=""><h3 class="verProducto">Ver Producto</h3></a>
+                    <h3 class="nombreProdSimilar">Producto XYZ</h3>
+                    <h3 class="precioProdSimilar">$60,00</h3>
+                    <a href=""><h3 class="verProdSimilar">Ver Producto</h3></a>
                 </li>
-                <li class="producto">
+                <li class="productoSimilar">
                     <img src="https://images.unsplash.com/photo-1620950127852-92592960e363?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fHN0YXIlMjB3YXJzJTIwaGVhZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
-                    <h3 class="nombreProducto">Producto XYZ</h3>
-                    <h3 class="precio">$60,00</h3>
-                    <a href=""><h3 class="verProducto">Ver Producto</h3></a>
+                    <h3 class="nombreProdSimilar">Producto XYZ</h3>
+                    <h3 class="precioProdSimilar">$60,00</h3>
+                    <a href=""><h3 class="verProdSimilar">Ver Producto</h3></a>
                 </li>
-                <li class="producto">
-                    <img src="https://images.unsplash.com/photo-1599002762948-19068b069803?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3RhciUyMHdhcnMlMjB5b2RhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
-                    <h3 class="nombreProducto">Producto XYZ</h3>
-                    <h3 class="precio">$60,00</h3>
-                    <a href=""><h3 class="verProducto">Ver Producto</h3></a>
+                <li class="productoSimilar">
+                    <img src="https://images.unsplash.com/photo-1592840496694-26d035b52b48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGNvbnNvbGVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    <h3 class="nombreProdSimilar">Producto XYZ</h3>
+                    <h3 class="precioProdSimilar">$60,00</h3>
+                    <a href=""><h3 class="verProdSimilar">Ver Producto</h3></a>
                 </li>
-                <li class="producto">
-                    <img src="https://images.unsplash.com/photo-1599719500956-d158a26ab3ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTF8fHN0YXIlMjB3YXJzJTIwdHJvb3BlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
-                    <h3 class="nombreProducto">Producto XYZ</h3>
-                    <h3 class="precio">$60,00</h3>
-                <a href=""><h3 class="verProducto">Ver Producto</h3></a>
+                <li class="productoSimilar">
+                    <img src="https://images.unsplash.com/photo-1620950127852-92592960e363?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fHN0YXIlMjB3YXJzJTIwaGVhZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    <h3 class="nombreProdSimilar">Producto XYZ</h3>
+                    <h3 class="precioProdSimilar">$60,00</h3>
+                    <a href=""><h3 class="verProdSimilar">Ver Producto</h3></a>
                 </li>
-                <li class="producto">
-                    <img src="https://images.unsplash.com/photo-1601814933824-fd0b574dd592?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c3RhciUyMHdhcnMlMjB5b2RhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
-                    <h3 class="nombreProducto">Producto XYZ</h3>
-                    <h3 class="precio">$60,00</h3>
-                    <a href=""><h3 class="verProducto">Ver Producto</h3></a>
+                <li class="productoSimilar">
+                    <img src="https://images.unsplash.com/photo-1592840496694-26d035b52b48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGNvbnNvbGVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    <h3 class="nombreProdSimilar">Producto XYZ</h3>
+                    <h3 class="precioProdSimilar">$60,00</h3>
+                    <a href=""><h3 class="verProdSimilar">Ver Producto</h3></a>
                 </li>
-                <li class="producto">
-                    <img src="https://images.unsplash.com/photo-1591927675938-b81b071d3e91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3RhciUyMHdhcnMlMjB0cm9vcGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
-                    <h3 class="nombreProducto">Producto XYZ</h3>
-                    <h3 class="precio">$60,00</h3>
-                    <a href=""><h3 class="verProducto">Ver Producto</h3></a>
+                <li class="productoSimilar">
+                    <img src="https://images.unsplash.com/photo-1620950127852-92592960e363?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fHN0YXIlMjB3YXJzJTIwaGVhZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    <h3 class="nombreProdSimilar">Producto XYZ</h3>
+                    <h3 class="precioProdSimilar">$60,00</h3>
+                    <a href=""><h3 class="verProdSimilar">Ver Producto</h3></a>
                 </li>
             </ul>
 
@@ -127,5 +133,6 @@
         <h4>2022</h4>
 
     </footer>
+    <script type="text/javascript" src="./assets/js/search.js"></script>
 </body>
 </html>
