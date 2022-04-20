@@ -55,10 +55,10 @@
             <h2>Star Wars</h2>
             <h3><a href="">Ver todo</a><i class="fa-solid fa-arrow-right"></i></h3>
             </div>
-            <ul class="listaProductos">
+            <ul class="listaProductos" data-listaStarwars>
                 <li class="producto">
                     <div class="producto__imgContainer">
-                       <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="" class="imgStore">
+                       <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80" alt="" class="imgStore">
                     </div>
                     <h3 class="nombreProducto">Producto XYZ</h3>
                     <h3 class="precio">$60,00</h3>
@@ -112,7 +112,7 @@
             <h2>Consolas</h2>
             <h3><a href="">Ver todo</a><i class="fa-solid fa-arrow-right"></i></h3>
             </div>
-          <ul class="listaProductos">
+          <ul class="listaProductos" data-listaConsolas>
                 <li class="producto">
                     <div class="producto__imgContainer">
                        <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="" class="imgStore">
@@ -168,7 +168,7 @@
             <h2>Diversos</h2>
             <h3><a href="">Ver todo</a><i class="fa-solid fa-arrow-right"></i></h3>
             </div>
-            <ul class="listaProductos">
+            <ul class="listaProductos" data-listaDiversos>
                 <li class="producto">
                     <div class="producto__imgContainer">
                        <img src="https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGdlZWt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="" class="imgStore">
@@ -256,6 +256,14 @@
         <h4>2022</h4>
 
     </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+      integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script type="text/javascript" src="./assets/js/search.js"></script>
+    <script type="module" src="./controllers/product.controller.js"></script>
+    
 </body>
 </html>

@@ -1,0 +1,26 @@
+{
+  "name": "alurageek",
+  "version": "1.0.0",
+  "description": "AluraGeek Store Tienda Virtual",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nnfromthewindow/alurageek.git"
+  },
+  "keywords": [
+    "Alura",
+    "Store",
+    "Front End",
+    "Back End",
+    "Oracle"
+  ],
+  "author": "Nicolas Nuccelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nnfromthewindow/alurageek/issues"
+  },
+  "homepage": "https://github.com/nnfromthewindow/alurageek#readme"
+}
