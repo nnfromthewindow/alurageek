@@ -15,7 +15,7 @@
   "producto": [
     {
       "productoImg": "https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
-      "nombre": "Tasa Darth Vader",
+      "nombre": "Tasa Trooper",
       "precio": "25",
       "descripcion": "Esto es una prueba de lo que tendria que ser una breve descripcion del producto  y de paso pruebo el teclado un poco y pruebo algo de velocidad con las teclas que no es tan facil pero son re suaves jajajaj ",
       "categoriaPrincipal": ["Star Wars"],
@@ -32,18 +32,18 @@
       "id": "2"
     },
     {
-      "productoImg": "https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
-      "nombre": "Tasa Darth Vader",
-      "precio": "25",
+      "productoImg": "https://images.unsplash.com/photo-1586136194012-35ceaddbd773?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      "nombre": "Mascara Trooper",
+      "precio": "500",
       "descripcion": "Esto es una prueba de lo que tendria que ser una breve descripcion del producto  y de paso pruebo el teclado un poco y pruebo algo de velocidad con las teclas que no es tan facil pero son re suaves jajajaj ",
       "categoriaPrincipal": ["Star Wars"],
       "categoriaSecundaria": ["Diversos"],
       "id": "1"
     },
     {
-      "productoImg": "https://images.unsplash.com/photo-1601814933824-fd0b574dd592?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80",
-      "nombre": "Figura Baby Yoda",
-      "precio": "800",
+      "productoImg": "https://images.unsplash.com/photo-1561409106-fece1abb71cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      "nombre": "Figura Mini Trooper",
+      "precio": "600",
       "descripcion": "Saraieeryuioa rhiusadjfhakjsd dfjhsdf djfsdfui fee ded edeo lllaSD..asd djfnm , efwIOEFD KDF FKDo9iuasooiidhfsdd djdjiij",
       "categoriaPrincipal": ["Consolas"],
       "categoriaSecundaria": ["Diversos"],

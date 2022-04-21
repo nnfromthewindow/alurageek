@@ -30,12 +30,6 @@
     width: 164px;
   }
 
-  .listaProductos {
-    flex-wrap: wrap;
-  }
-  .listaProductos {
-    justify-content: space-around;
-  }
   .productoContainer {
     padding-bottom: 0;
   }
@@ -160,10 +154,6 @@
     font-size: 14px;
   }
 
-  .listaProductos {
-    justify-content: space-around;
-  }
-
   .contacto__logoContainer--img {
     width: 100%;
   }
@@ -207,8 +197,12 @@
 
 /*RESPONSIVE ITEMS GALERIA STORE*/
 @media only screen and (min-width: 0px) {
-  .producto:nth-child(1) {
+  .producto:nth-child(1),
+  .producto:nth-child(2),
+  .producto:nth-child(3),
+  .producto:nth-child(4) {
     display: block;
+    flex-wrap: wrap;
   }
   .listaProdSimilar {
     justify-content: space-around;
@@ -218,6 +212,12 @@
   }
   .prodsimContainer h2 {
     text-align: center;
+  }
+  .galeriaItem {
+    width: 95%;
+  }
+  .listaProductos {
+    justify-content: space-around;
   }
 }
 @media only screen and (min-width: 356px) {
@@ -244,6 +244,9 @@
 @media only screen and (min-width: 1030px) {
   .producto:nth-child(5) {
     display: block;
+  }
+  .galeriaItem {
+    width: 90%;
   }
 }
 @media only screen and (min-width: 1300px) {
@@ -295,9 +298,6 @@
   .listaProductosEditables {
     grid-template-columns: repeat(3, 1fr);
   }
-  .producto__imgContainer {
-    width: 140px;
-  }
 
   .imgEditar {
     width: 140px;
@@ -310,9 +310,6 @@
   .listaProductosEditables {
     grid-template-columns: repeat(4, 1fr);
   }
-  .producto__imgContainer {
-    width: 164px;
-  }
 
   .imgEditar {
     width: 164px;
@@ -324,9 +321,6 @@
 @media only screen and (min-width: 1100px) {
   .listaProductosEditables {
     grid-template-columns: repeat(5, 1fr);
-  }
-  .producto__imgContainer {
-    width: 176px;
   }
 
   .imgEditar {

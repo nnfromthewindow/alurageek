@@ -9,7 +9,7 @@
 .galeriaItem {
   margin: 0 auto;
   padding-top: 5vh;
-  width: 80%;
+  width: 90%;
 }
 
 .galeriaItem__titleContainer {
@@ -45,10 +45,10 @@
 }
 
 .listaProductos {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 1vw;
-  grid-auto-flow: column;
-  grid-column-gap: 20px;
+  grid-column-gap: 16px;
   width: fit-content;
 }
 
@@ -80,6 +80,15 @@
 
 .precio {
   color: #464646;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 0.5vh;
+}
+
+.precio::before {
+  color: #464646;
+  content: "$";
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 700;
