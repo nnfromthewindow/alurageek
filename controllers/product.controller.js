@@ -1,21 +1,52 @@
 import { productServices } from "../service/product-service.js";
 
-const listaStore = () => {
-  productServices.productLista().then((data) => {
-    data.forEach(({ productoImg, nombre, precio, id }) => {
-      const listaStarWars = document.querySelector("[data-listaStarwars]");
-      const lineaHtml = document.createElement("li");
-      const newItemStarWars = `<li class="producto" id="${id}"
+const crearLinea = (productoImg, nombre, precio, id) => {
+  const lineaHtml = document.createElement("li");
+  lineaHtml.setAttribute("class", "producto");
+  lineaHtml.setAttribute("id", id);
+  const newItemStarWars = `
                     <div class="producto__imgContainer">
                     <img src="${productoImg}" alt="${nombre}" class="imgStore">
                     </div>
                     <h3 class="nombreProducto">${nombre}</h3>
                     <h3 class="precio">${precio}</h3>
-                    <a href="./producto.html?id=${id}"><h3 class="verProducto">Ver Producto</h3></a>
-                </li>`;
+                    <a href="./producto.html?id=${id}"><h3 class="verProducto">Ver Producto</h3></a>`;
+  lineaHtml.innerHTML = newItemStarWars;
+  return lineaHtml;
+};
+
+const listaStarWars = document.querySelector("[data-listaStarwars]");
+
+productServices.productLista().then((data) => {
+  data.forEach(({ productoImg, nombre, precio, id }) => {
+    const linea = crearLinea(productoImg, nombre, precio, id);
+    listaStarWars.appendChild(linea);
+  });
+});
+
+/*
+
+const listaStarWars = document.querySelector("[data-listaStarwars]");
+
+const listaStore = () => {
+  productServices.productLista().then((data) => {
+    data.forEach(({ productoImg, nombre, precio, id }) => {
+      const lineaHtml = document.createElement("li");
+      lineaHtml.setAttribute("class", "producto");
+      lineaHtml.setAttribute("id", id);
+      const newItemStarWars = `
+                    <div class="producto__imgContainer">
+                    <img src="${productoImg}" alt="${nombre}" class="imgStore">
+                    </div>
+                    <h3 class="nombreProducto">${nombre}</h3>
+                    <h3 class="precio">${precio}</h3>
+                    <a href="./producto.html?id=${id}"><h3 class="verProducto">Ver Producto</h3></a>`;
       lineaHtml.innerHTML = newItemStarWars;
+      listaStarWars.appendChild(lineaHtml);
+      return listaStarWars;
     });
   });
+  listaStore();
   /*
   const listaStarWars = document.querySelector("[data-listaStarwars]");
   const newItemStarWars = `<li class="producto">
@@ -26,6 +57,7 @@ const listaStore = () => {
                     <h3 class="precio">$60,00</h3>
                     <a href="./producto.html"><h3 class="verProducto">Ver Producto</h3></a>
                 </li>`;
-*/
+
 };
 listaStore();
+*/

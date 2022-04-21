@@ -2,12 +2,14 @@
   background-color: #e5e5e5;
   margin: 0 auto;
   width: 100%;
-  padding: 0 5%;
+  padding: 0 0%;
   padding-bottom: 5vh;
 }
 
 .galeriaItem {
+  margin: 0 auto;
   padding-top: 5vh;
+  width: 80%;
 }
 
 .galeriaItem__titleContainer {
@@ -43,9 +45,11 @@
 }
 
 .listaProductos {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
   margin-top: 1vw;
+  grid-auto-flow: column;
+  grid-column-gap: 20px;
+  width: fit-content;
 }
 
 .producto {
