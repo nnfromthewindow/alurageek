@@ -1,6 +1,12 @@
 const productLista = () =>
   fetch("http://localhost:3000/producto").then((response) => response.json());
 
+const productObtener = (id) => {
+  return fetch(`http://localhost:3000/producto/${id}`).then((response) =>
+    response.json()
+  );
+};
+
 const productDelete = () => {
   return fetch(`http://localhost:3000/producto/${id}`, {
     method: "DELETE",
@@ -59,6 +65,7 @@ const productNew = (
 
 export const productServices = {
   productLista,
+  productObtener,
   productDelete,
   productEdit,
   productNew,

@@ -1,5 +1,9 @@
 .productoSeleccionado {
   background-color: #e5e5e5;
+  padding-bottom: 1vh;
+}
+.similaresShow {
+  background-color: #e5e5e5;
   padding-bottom: 5vh;
 }
 
@@ -34,6 +38,15 @@
 
 .precioProducto {
   color: #464646;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 1.5vh;
+}
+
+.precioProducto::before {
+  color: #464646;
+  content: "$";
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -91,6 +104,14 @@
 
 .precioProdSimilar {
   color: #464646;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 0.5vh;
+}
+.precioProdSimilar::before {
+  color: #464646;
+  content: "$";
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 700;
