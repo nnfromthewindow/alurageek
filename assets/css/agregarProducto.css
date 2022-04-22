@@ -174,3 +174,23 @@
   background-color: #235eac;
   transition: 200ms;
 }
+
+.input__nuevaCategoria {
+  color: #464646;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 51px;
+  outline: none;
+  padding-left: 5px;
+
+  width: 100%;
+}
+.categoriaLabel {
+  color: #464646;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+
+  width: 100%;
+}

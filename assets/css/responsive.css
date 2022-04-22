@@ -66,8 +66,8 @@
 
 @media only screen and (min-width: 801px) {
   .imgProducto {
-    width: 560px;
-    height: 403px;
+    width: 42vw;
+    height: 28vw;
   }
   .detail__titulo {
     font-size: 52px;
