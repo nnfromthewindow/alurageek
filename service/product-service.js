@@ -42,7 +42,7 @@ const productNew = (
   nombre,
   precio,
   descripcion,
-  img,
+  productoImg,
   categoriaPrincipal,
   categoriaSecundaria
 ) => {
@@ -55,7 +55,7 @@ const productNew = (
       nombre,
       precio,
       descripcion,
-      img,
+      productoImg,
       categoriaPrincipal,
       categoriaSecundaria,
       id: uuid.v4(),
