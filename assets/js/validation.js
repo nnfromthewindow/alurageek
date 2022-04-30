@@ -6,22 +6,15 @@ precioInput.addEventListener("keypress", (e) => {
   if (permitidas.includes(e.key)) {
     precioInput.value += e.key;
   }
-  if (precioInput.value.includes(",")) {
-    let max = precioInput.value.length + 2;
 
-    if (precioInput.value.length > max) {
-      console.log("hola");
-    }
+  let reg = /([,][0-9][0-9])/g;
+
+  if (precioInput.value.match(reg)) {
+    permitidas = [];
+  } else {
+    permitidas = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ","];
+  }
+  if (precioInput.value.includes(",") && !precioInput.value.match(reg)) {
+    permitidas = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
   }
 });
-
-/*
-precioInput.addEventListener("keydown", (e) => {
-  var letra = e.key;
-  console.log(letra);
-  
- let value = e.target.value;
-  value.replace(/(.*[1-9])[,][0-9][0-9]/g, "");
-  
-});
-*/
