@@ -43,11 +43,14 @@
             </div>
     </header>
     <section class="login">
-        <form class="loginContainer">
+        <form class="loginContainer" id="formLogin">
             <h2 class="loginTitle">Iniciar Sesión</h2>
             <input type="email" class="loginInput" id="email" name="email" placeholder="Escriba su correo electrónico" required>
             <input type="password" class="loginInput" id="password" name="password" placeholder="Escriba su contraseña" required>
             <a href="./editar.html"><button type="button" id="entrar">Entrar</button></a>
+            <a href="./registrar.html">
+                <h4 class="registrese">¿Todvía no esta registrado? Registrese Aquí</h4>
+            </a>
         </form>
     </section>
     <section class="contacto">
@@ -87,5 +90,6 @@
 
     </footer>
     <script type="text/javascript" src="./assets/js/search.js"></script>
+    <script type="module" src="./controllers/loginUser.controller.js"></script>
 </body>
 </html>

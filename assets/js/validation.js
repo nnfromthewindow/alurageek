@@ -17,4 +17,12 @@ precioInput.addEventListener("keypress", (e) => {
   if (precioInput.value.includes(",") && !precioInput.value.match(reg)) {
     permitidas = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
   }
+  if (precioInput.value.charAt(0) == "0") {
+    precioInput.value = "";
+  }
+  if (!precioInput.value.includes(",")) {
+    precioInput.onblur = () => {
+      console.log("hola");
+    };
+  }
 });

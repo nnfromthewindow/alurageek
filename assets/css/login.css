@@ -64,3 +64,12 @@
   border-right: 2px solid none;
   border-top: 2px solid none;
 }
+.registrese {
+  color: #464646;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0 auto;
+  padding-top: 2vh;
+  width: fit-content;
+}

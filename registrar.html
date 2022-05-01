@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<head>                                                              
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>AluraGeek - Agregar producto</title>
+    <title>AluraGeek - Login</title>
     <link href="./assets/css/normalize.css" rel="stylesheet" />
     <link href="./assets/css/reset.css" rel="stylesheet" />
-     <link href="./assets/css/banner.css" rel="stylesheet" />
-    <link href="./assets/css/agregarProducto.css" rel="stylesheet" />
+    <link href="./assets/css/banner.css" rel="stylesheet" />
     <link href="./assets/css/navbar.css" rel="stylesheet" />
+    <link href="./assets/css/login.css" rel="stylesheet" />
     <link href="./assets/css/contacto.css" rel="stylesheet" />
     <link href="./assets/css/footer.css" rel="stylesheet" />
     <link href="./assets/css/responsive.css" rel="stylesheet" />
@@ -19,6 +19,7 @@
     <script src="https://kit.fontawesome.com/49042185bb.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    
     <header class="header">
         <div class="search">
              <a href="./index.html"><div class="logo"></div></a>
@@ -42,52 +43,16 @@
                 </div>
             </div>
     </header>
-   <section class="agregarProducto">
-    <div class="agregarProducto__contenedor">
-        <h1>Agregar nuevo producto</h1>
-        <div class="cuadroFlex">
-            <div class="cuadroArrastre" draggable="true" data-cuadro>
-                <div data-clear>
-                <div class="imgCarpeta"><i class="fa-solid fa-image"></i></div>
-                <div class="imgMas"><i class="fa-solid fa-plus"></i></div>
-                <h3>Arrastre para agregar una imagen para el producto</h3>
-                <h4>Agregar una imagen para el producto</h4>
-                </div>
-            </div>
-            <h5>O</h5>
-            <button class="searchFileBtn" id="buscarBtn">Busque en su computador</button>
-        </div>
-        <form  class="formularioAgregar" data-form>
-            <div class="input__nuevoNombre">
-                <h4>Nombre del producto</h4>
-                <input type="text" id="nombre" required>
-            </div>
-            <div class="input__nuevoPrecio">
-                <h4>Precio del producto</h4>
-                <input type="text" id="precio" name="precio" pattern="([0-9].*[,][0-9][0-9])" required>
-            </div>
-            <label for="categoriaPrincipal" class="categoriaLabel">Categoria Principal</label>
-            <select name="categoriaPrincipal" id="categoriaPrincipal" class="input__nuevaCategoria">
-                <option value="">Star Wars</option>
-                <option value="">Consolas</option>
-                <option value="">Diversos</option>
-            </select>
-            <label for="categoriaSecundaria" class="categoriaLabel">Categoria Secundaria</label>
-            <select name="categoriaSecundaria" id="categoriaSecundaria" class="input__nuevaCategoria" > 
-                <option value="">Star Wars</option>
-                <option value="">Consolas</option>
-                <option value="">Diversos</option>
-            </select>
-            <div class="input__nuevoDescripcion">
-                <h4>Descripción del producto</h4>
-                <textarea id="descripcion" required></textarea>
-            </div>
+    <section class="login">
+        <form class="loginContainer" id="registerForm">
+            <h2 class="loginTitle">Registrar Usuario</h2>
+            <input type="email" class="loginInput" id="email" name="email" placeholder="Escriba su correo electrónico" required>
+            <input type="password" class="loginInput" id="password" name="password" placeholder="Escriba su contraseña" required>
+            <input type="password" class="loginInput" id="repassword" name="repassword" placeholder="Reingrese su contraseña" required>
+            <a href=""><button type="submit" id="entrar">Registrar</button></a>
             
-            <button type="submit" class="agregarProd__btn" id="sendBtn">Agregar producto</button>
         </form>
-    </div>
-
-   </section>
+    </section>
     <section class="contacto">
         <div class="contactoContainer">
             <div class="contacto__logoContainer">
@@ -120,20 +85,11 @@
         </div>
     </section>
     <footer class="footer">
-        <div class="footer__container">
         <h4>Desarrollado por Nicolás Nuccelli</h4>
         <h4>2022</h4>
-</div>
-    </footer>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
-      integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script type="text/javascript" src="./assets/js/search.js"></script>
-    <script type="text/javascript" src="./assets/js/validation.js"></script>
-    <script type="module" src="./controllers/agregar.controller.js"></script>
-</body>
 
+    </footer>
+    <script type="text/javascript" src="./assets/js/search.js"></script>
+    <script type="module" src="./controllers/registerUser.controller.js"></script>
+</body>
 </html>
