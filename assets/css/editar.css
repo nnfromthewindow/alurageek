@@ -115,6 +115,7 @@
 }
 .editContainer i:hover {
   color: dodgerblue;
+  cursor: pointer;
   transition: 200ms;
   transform: scale(1.05, 1.05);
 }

@@ -9,6 +9,21 @@
       "pass": "123456",
       "email": "johnny@hotmail.com",
       "id": "2"
+    },
+    {
+      "email": "anzellottiarq@gmail.com",
+      "password": "123",
+      "id": "CP4M7-r"
+    },
+    {
+      "email": "nuccelli@hotmail.com",
+      "password": "Laperla01",
+      "id": "yH0p1R_"
+    },
+    {
+      "email": "anzellottiarq@gmail.com",
+      "password": "LAperla03",
+      "id": "w-TUb-l"
     }
   ],
   "producto": [
@@ -17,8 +32,12 @@
       "nombre": "Tasa Trooper",
       "precio": "25",
       "descripcion": "Esto es una prueba de lo que tendria que ser una breve descripcion del producto  y de paso pruebo el teclado un poco y pruebo algo de velocidad con las teclas que no es tan facil pero son re suaves jajajaj ",
-      "categoriaPrincipal": ["Star Wars"],
-      "categoriaSecundaria": ["Diversos"],
+      "categoriaPrincipal": [
+        "Star Wars"
+      ],
+      "categoriaSecundaria": [
+        "Diversos"
+      ],
       "id": "1"
     },
     {
@@ -26,8 +45,12 @@
       "nombre": "Figura Baby Yoda",
       "precio": "800",
       "descripcion": "Saraieeryuioa rhiusadjfhakjsd dfjhsdf djfsdfui fee ded edeo lllaSD..asd djfnm , efwIOEFD KDF FKDo9iuasooiidhfsdd djdjiij",
-      "categoriaPrincipal": ["Consolas"],
-      "categoriaSecundaria": ["Diversos"],
+      "categoriaPrincipal": [
+        "Consolas"
+      ],
+      "categoriaSecundaria": [
+        "Diversos"
+      ],
       "id": "2"
     },
     {
@@ -35,8 +58,12 @@
       "nombre": "Mascara Trooper",
       "precio": "500",
       "descripcion": "Esto es una prueba de lo que tendria que ser una breve descripcion del producto  y de paso pruebo el teclado un poco y pruebo algo de velocidad con las teclas que no es tan facil pero son re suaves jajajaj ",
-      "categoriaPrincipal": ["Star Wars"],
-      "categoriaSecundaria": ["Diversos"],
+      "categoriaPrincipal": [
+        "Star Wars"
+      ],
+      "categoriaSecundaria": [
+        "Diversos"
+      ],
       "id": "3"
     },
     {
@@ -44,8 +71,12 @@
       "nombre": "Figura Mini Trooper",
       "precio": "600",
       "descripcion": "Saraieeryuioa rhiusadjfhakjsd dfjhsdf djfsdfui fee ded edeo lllaSD..asd djfnm , efwIOEFD KDF FKDo9iuasooiidhfsdd djdjiij",
-      "categoriaPrincipal": ["Consolas"],
-      "categoriaSecundaria": ["Diversos"],
+      "categoriaPrincipal": [
+        "Consolas"
+      ],
+      "categoriaSecundaria": [
+        "Diversos"
+      ],
       "id": "4"
     },
     {
@@ -53,8 +84,12 @@
       "nombre": "Figura Mini Trooper",
       "precio": "600",
       "descripcion": "Saraieeryuioa rhiusadjfhakjsd dfjhsdf djfsdfui fee ded edeo lllaSD..asd djfnm , efwIOEFD KDF FKDo9iuasooiidhfsdd djdjiij",
-      "categoriaPrincipal": ["Consolas"],
-      "categoriaSecundaria": ["Diversos"],
+      "categoriaPrincipal": [
+        "Consolas"
+      ],
+      "categoriaSecundaria": [
+        "Diversos"
+      ],
       "id": "4"
     }
   ]

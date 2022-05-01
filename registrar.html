@@ -47,8 +47,8 @@
         <form class="loginContainer" id="registerForm">
             <h2 class="loginTitle">Registrar Usuario</h2>
             <input type="email" class="loginInput" id="email" name="email" placeholder="Escriba su correo electrónico" required>
-            <input type="password" class="loginInput" id="password" name="password" placeholder="Escriba su contraseña" required>
-            <input type="password" class="loginInput" id="repassword" name="repassword" placeholder="Reingrese su contraseña" required>
+            <input type="password" class="loginInput" id="password" name="password" pattern="^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{6,12}$" placeholder="Escriba su contraseña" required>
+            <input type="password" class="loginInput" id="repassword" name="repassword" pattern="^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{6,12}$" placeholder="Reingrese su contraseña" required>
             <a href=""><button type="submit" id="entrar">Registrar</button></a>
             
         </form>

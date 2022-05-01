@@ -9,8 +9,8 @@ const listaProductosTodos = (productoImg, nombre, precio, id) => {
   const contenido = `<div class="productoEdit__imgContainer">
                             <img src="${productoImg}" alt="${nombre}" class="imgEditar">
                             <div class="editContainer">
-                                <i class="fa-solid fa-trash"></i>
-                                <i class="fa-solid fa-pencil"></i>
+                                <i class="fa-solid fa-trash" id="delete-${id}"></i>
+                                <i class="fa-solid fa-pencil" id="edit-${id}"></i>
                             </div>
                         </div>
                         <h3 class="nombreProducto">${nombre}</h3>
@@ -18,12 +18,31 @@ const listaProductosTodos = (productoImg, nombre, precio, id) => {
                         <a href="./producto.html?id=${id}"><h3 class="verProducto">Ver Producto</h3></a>
                     `;
   linea.innerHTML = contenido;
+
+  const borrar = linea.querySelector(`#delete-${id}`);
+  console.log(borrar);
+  borrar.addEventListener("click", () => {
+    const id = borrar.id;
+    productServices
+      .productDelete(id)
+      .then((respuesta) => {
+        console.log(respuesta);
+      })
+      .catch((err) => alert("Ocurrió un error"));
+  });
   lista.appendChild(linea);
   return lista;
 };
 
-productServices.productLista().then((data) => {
-  data.forEach((data) => {
-    listaProductosTodos(data.productoImg, data.nombre, data.precio, data.id);
+productServices
+  .productLista()
+  .then((data) => {
+    data.forEach((data) => {
+      listaProductosTodos(data.productoImg, data.nombre, data.precio, data.id);
+    });
+  })
+  .then(() => {
+    /*  const borrar = (id) => {
+      productServices.productDelete(id);
+    };*/
   });
-});

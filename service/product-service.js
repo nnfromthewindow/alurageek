@@ -7,7 +7,7 @@ const productObtener = (id) => {
   );
 };
 
-const productDelete = () => {
+const productDelete = (id) => {
   return fetch(`http://localhost:3000/producto/${id}`, {
     method: "DELETE",
   });
