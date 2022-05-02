@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>AluraGeek - Agregar producto</title>
+    <title>AluraGeek - Editar producto</title>
     <link href="./assets/css/normalize.css" rel="stylesheet" />
     <link href="./assets/css/reset.css" rel="stylesheet" />
      <link href="./assets/css/banner.css" rel="stylesheet" />
@@ -44,7 +44,7 @@
     </header>
    <section class="agregarProducto">
     <div class="agregarProducto__contenedor">
-        <h1>Agregar nuevo producto</h1>
+        <h1>Editar producto</h1>
         <div class="cuadroFlex">
             <div class="cuadroArrastre" draggable="true" data-cuadro>
                 <div data-clear>
@@ -57,7 +57,7 @@
             <h5>O</h5>
             <button class="searchFileBtn" id="buscarBtn">Busque en su computador</button>
         </div>
-        <form  class="formularioAgregar" data-form>
+        <form  class="formularioAgregar" id="dataForm">
             <div class="input__nuevoNombre">
                 <h4>Nombre del producto</h4>
                 <input type="text" id="nombre" required>
@@ -128,7 +128,7 @@
     ></script>
     <script type="text/javascript" src="./assets/js/search.js"></script>
     <script type="text/javascript" src="./assets/js/validation.js"></script>
-    <script type="module" src="./controllers/agregar.controller.js"></script>
+    <script type="module" src="./controllers/edit.controller.js"></script>
 </body>
 
 </html>

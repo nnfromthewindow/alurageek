@@ -57,7 +57,6 @@ const formulario = document.querySelector("[data-form]");
 const nombre = document.getElementById("nombre");
 const precio = document.getElementById("precio");
 const categoriaPrincipal = document.getElementById("categoriaPrincipal");
-const categoriaSecundaria = document.getElementById("categoriaSecundaria");
 const descripcion = document.getElementById("descripcion");
 const sendBtn = document.getElementById("sendBtn");
 
@@ -98,8 +97,7 @@ formulario.addEventListener("submit", (e) => {
         precio.value,
         descripcion.value,
         urlImageUpload,
-        categoriaPrincipal.options[categoriaPrincipal.selectedIndex].text,
-        categoriaSecundaria.options[categoriaSecundaria.selectedIndex].text
+        categoriaPrincipal.options[categoriaPrincipal.selectedIndex].text
       )
       .then((data) => {
         console.log(data);

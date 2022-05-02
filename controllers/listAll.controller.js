@@ -20,11 +20,17 @@ const listaProductosTodos = (productoImg, nombre, precio, id) => {
   linea.innerHTML = contenido;
 
   const borrar = linea.querySelector(`#delete-${id}`);
-  console.log(borrar);
+  const edit = linea.querySelector(`#edit-${id}`);
+
+  edit.addEventListener("click", () => {
+    window.location.href = `../edit-product.html?id=${id.replace("edit-", "")}`;
+  });
+
   borrar.addEventListener("click", () => {
     const id = borrar.id;
+
     productServices
-      .productDelete(id)
+      .productDelete(id.replace("delete-", ""))
       .then((respuesta) => {
         console.log(respuesta);
       })
@@ -41,8 +47,4 @@ productServices
       listaProductosTodos(data.productoImg, data.nombre, data.precio, data.id);
     });
   })
-  .then(() => {
-    /*  const borrar = (id) => {
-      productServices.productDelete(id);
-    };*/
-  });
+  .catch((err) => alert("Ocurrió un error"));

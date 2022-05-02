@@ -13,13 +13,19 @@ const productDelete = (id) => {
   });
 };
 
+const detalleProducto = (id) => {
+  return fetch(`http://localhost:3000/producto/${id}`).then((response) =>
+    response.json()
+  );
+};
+
 const productEdit = (
   nombre,
   precio,
   descripcion,
   img,
   categoriaPrincipal,
-  categoriaSecundaria,
+
   id
 ) => {
   return fetch(`http://localhost:3000/producto/${id}`, {
@@ -33,7 +39,6 @@ const productEdit = (
       descripcion,
       img,
       categoriaPrincipal,
-      categoriaSecundaria,
     }),
   });
 };
@@ -43,8 +48,7 @@ const productNew = (
   precio,
   descripcion,
   productoImg,
-  categoriaPrincipal,
-  categoriaSecundaria
+  categoriaPrincipal
 ) => {
   return fetch(`http://localhost:3000/producto/`, {
     method: "POST",
@@ -57,7 +61,7 @@ const productNew = (
       descripcion,
       productoImg,
       categoriaPrincipal,
-      categoriaSecundaria,
+
       id: uuid.v4(),
     }),
   });
@@ -69,4 +73,5 @@ export const productServices = {
   productDelete,
   productEdit,
   productNew,
+  detalleProducto,
 };

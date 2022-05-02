@@ -1,5 +1,4 @@
 import { productServices } from "../service/product-service.js";
-//FUNCION PARA GENERAR PAGINA DE PRODUCTO
 
 const productoPagina = (productoImg, nombre, precio, descripcion) => {
   const linea = document.querySelector("[data-productoSeleccionado]");

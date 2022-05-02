@@ -12,7 +12,6 @@ formRegister.addEventListener("submit", (e) => {
       .userRegister(email.value, password.value)
 
       .then(() => {
-        //alert("Registro al usuario con exito!");
         window.location.href = "../regexitoso.html";
       });
   } else {
