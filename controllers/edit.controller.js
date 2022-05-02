@@ -1,19 +1,73 @@
 import { productServices } from "../service/product-service.js";
 
+const cuadro = document.querySelector("[data-cuadro]");
+
+cuadro.addEventListener("dragover", (e) => {
+  e.preventDefault();
+});
+cuadro.addEventListener("dragleave", (e) => {
+  e.preventDefault();
+});
+
+cuadro.addEventListener("drop", (e) => {
+  e.preventDefault();
+  const file = e.dataTransfer.files[0];
+  processFile(file);
+});
+
+var urlImageUpload = "";
+
+const processFile = (file) => {
+  const docType = file.type;
+  const validExtensions = ["image/jpeg", "image/jpg", "image/png"];
+  if (validExtensions.includes(docType)) {
+    const fileReader = new FileReader();
+    fileReader.addEventListener("load", (e) => {
+      const fileUrl = fileReader.result;
+      const clear = document.querySelector("[data-clear]");
+      urlImageUpload = fileUrl;
+      cuadro.style.backgroundImage = `url(${fileUrl})`;
+      cuadro.style.backgroundSize = "cover";
+      cuadro.style.backgroundRepeat = "no-repeat";
+      cuadro.style.backgroundPosition = "center";
+      clear.style.display = "none";
+    });
+
+    fileReader.readAsDataURL(file);
+  } else {
+    alert("El archivo no es valido");
+  }
+};
+
+const buscarImg = document.getElementById("buscarBtn");
+
+buscarImg.addEventListener("click", importData);
+
+function importData() {
+  let input = document.createElement("input");
+  input.type = "file";
+  input.onchange = () => {
+    const file = input.files[0];
+    processFile(file);
+  };
+  input.click();
+}
+
+const formulario = document.getElementById("dataForm");
+const img = document.querySelector("[data-cuadro]");
+const nombre = document.getElementById("nombre");
+const precio = document.getElementById("precio");
+const categoriaPrincipal = document.getElementById("categoriaPrincipal");
+const descripcion = document.getElementById("descripcion");
+const clear = document.querySelector("[data-clear]");
+
 const getInfo = async () => {
   const url = new URL(window.location);
   const id = url.searchParams.get("id");
-  const cuadro = document.querySelector("[data-cuadro]");
-  const formulario = document.querySelector("[data-form]");
-  const nombre = document.getElementById("nombre");
-  const precio = document.getElementById("precio");
-  const categoriaPrincipal = document.getElementById("categoriaPrincipal");
-  const descripcion = document.getElementById("descripcion");
-  const sendBtn = document.getElementById("sendBtn");
-  const clear = document.querySelector("[data-clear]");
+
   try {
     const producto = await productServices.detalleProducto(id);
-    console.log(producto.productoImg);
+
     if (
       producto.productoImg &&
       producto.nombre &&
@@ -21,10 +75,10 @@ const getInfo = async () => {
       producto.descripcion &&
       producto.categoriaPrincipal
     ) {
-      cuadro.style.backgroundImage = `url(${producto.productoImg})`;
-      cuadro.style.backgroundSize = "cover";
-      cuadro.style.backgroundRepeat = "no-repeat";
-      cuadro.style.backgroundPosition = "center";
+      img.style.backgroundImage = `url(${producto.productoImg})`;
+      img.style.backgroundSize = "cover";
+      img.style.backgroundRepeat = "no-repeat";
+      img.style.backgroundPosition = "center";
       clear.style.display = "none";
       nombre.value = producto.nombre;
       precio.value = producto.precio;
@@ -39,3 +93,50 @@ const getInfo = async () => {
   }
 };
 getInfo();
+
+function validarNombre() {
+  let reg = /(^\S+\w.*)/g;
+  if (nombre.value == "") {
+    nombre.setCustomValidity("El nombre del producto no puede estar vacío");
+  } else if (!nombre.value.match(reg) && nombre.value != "") {
+    nombre.setCustomValidity(
+      "El nombre del producto no puede empezar con un espacio en blanco"
+    );
+  } else if (nombre.value.match(reg)) {
+    nombre.setCustomValidity("");
+  }
+}
+nombre.addEventListener("focus", validarNombre);
+
+function validarPrecio() {
+  let reg = /([,][0-9][0-9])/g;
+  if (!precio.value.match(reg)) {
+    precio.setCustomValidity("Ingrese un precio con coma(,) y dos decimales");
+  } else {
+    precio.setCustomValidity("");
+  }
+}
+precio.addEventListener("focus", validarPrecio);
+
+formulario.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const url = new URL(window.location);
+  const id = url.searchParams.get("id");
+
+  const img = document
+    .querySelector("[data-cuadro]")
+    .style.backgroundImage.slice(4, -1)
+    .replace(/"/g, "");
+  const nombre = document.getElementById("nombre").value;
+  const precio = document.getElementById("precio").value;
+  var categoriaPrincipal = document.getElementById("categoriaPrincipal");
+  categoriaPrincipal =
+    categoriaPrincipal.options[categoriaPrincipal.selectedIndex].text;
+  const descripcion = document.getElementById("descripcion").value;
+
+  productServices
+    .productEdit(nombre, precio, descripcion, img, categoriaPrincipal, id)
+    .then(() => {
+      window.location.href = "../lista-user.html";
+    });
+});

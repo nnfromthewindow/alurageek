@@ -23,9 +23,8 @@ const productEdit = (
   nombre,
   precio,
   descripcion,
-  img,
+  productoImg,
   categoriaPrincipal,
-
   id
 ) => {
   return fetch(`http://localhost:3000/producto/${id}`, {
@@ -37,7 +36,7 @@ const productEdit = (
       nombre,
       precio,
       descripcion,
-      img,
+      productoImg,
       categoriaPrincipal,
     }),
   });
@@ -61,7 +60,6 @@ const productNew = (
       descripcion,
       productoImg,
       categoriaPrincipal,
-
       id: uuid.v4(),
     }),
   });

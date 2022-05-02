@@ -26,7 +26,6 @@ const processFile = (file) => {
       const fileUrl = fileReader.result;
       const clear = document.querySelector("[data-clear]");
       urlImageUpload = fileUrl;
-      console.log(urlImageUpload);
       cuadro.style.backgroundImage = `url(${fileUrl})`;
       cuadro.style.backgroundSize = "cover";
       cuadro.style.backgroundRepeat = "no-repeat";
@@ -61,9 +60,14 @@ const descripcion = document.getElementById("descripcion");
 const sendBtn = document.getElementById("sendBtn");
 
 function validarNombre() {
+  let reg = /(^\S+\w.*)/g;
   if (nombre.value == "") {
-    nombre.setCustomValidity("Ingrese el nombre del producto");
-  } else {
+    nombre.setCustomValidity("El nombre del producto no puede estar vacío");
+  } else if (!nombre.value.match(reg)) {
+    nombre.setCustomValidity(
+      "El nombre del producto no puede empezar con un espacio en blanco"
+    );
+  } else if (nombre.value.match(reg)) {
     nombre.setCustomValidity("");
   }
 }
@@ -99,8 +103,9 @@ formulario.addEventListener("submit", (e) => {
         urlImageUpload,
         categoriaPrincipal.options[categoriaPrincipal.selectedIndex].text
       )
-      .then((data) => {
-        console.log(data);
-      });
+      .then(() => {
+        document.location.href = "../agrego-correcto.html";
+      })
+      .catch((err) => alert("Ocurrió un error"));
   }
 });
