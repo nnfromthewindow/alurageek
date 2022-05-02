@@ -37,53 +37,10 @@ const crearLinea = async (categoria) => {
     listaCategoria.appendChild(li);
   });
 
-  //console.log(listaCategoria);
-  // dataCategorias.forEach(({productoImg, nombre, precio, categoria}) => {});
-  //console.log(listaCategoria);
-
   galeria.appendChild(linea);
   return galeria;
 };
 
 categorias.forEach((categoria) => {
   crearLinea(categoria);
-  //console.log(nuevaLinea);
-  //galeria.appendChild(nuevaLinea);
 });
-
-//crearLinea("Consolas");
-
-/*
-productServices
-  .productLista()
-  .then((data) => {
-    data.forEach(({ productoImg, nombre, precio, id }) => {
-      const linea = crearLinea(productoImg, nombre, precio, id);
-      listaStarWars.appendChild(linea);
-    });
-  })
-  .catch((error) => alert("Hubo un error"));
-
-
-
-  
-                    <div class="producto__imgContainer">
-                    <img src="${productoImg}" alt="${nombre}" class="imgStore">
-                    </div>
-                    <h3 class="nombreProducto">${nombre}</h3>
-                    <h3 class="precio">${precio}</h3>
-                    <a href="./producto.html?id=${id}"><h3 class="verProducto">Ver Producto</h3></a>    
-
-
-productServices
-  .productLista()
-  .then((response) =>
-    console.log(
-      response.filter((resp) => resp.categoriaPrincipal == "Consolas")
-    )
-  );
-
-
-
-
-                    */

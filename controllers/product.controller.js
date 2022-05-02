@@ -36,8 +36,6 @@ const obtenerInformacion = () => {
       productoPagina(productoImg, nombre, precio, descripcion)
     )
     .catch((error) => alert("Hubo un error"));
-
-  // const listaSimilares = document.getElementById("listaSimilares");
 };
 obtenerInformacion();
 
