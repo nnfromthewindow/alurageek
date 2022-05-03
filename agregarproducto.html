@@ -21,10 +21,10 @@
 <body>
     <header class="header">
         <div class="search">
-             <a href="./index.html"><div class="logo"></div></a>
+            <a href="./index.html"><div class="logo"></div></a>
             <div class="search__input">
-                <input type="text" placeholder="¿Qué deseas buscar?">
-                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                <input type="text" placeholder="¿Qué deseas buscar?"  id="buscarInput">
+                <a><i class="fa-solid fa-magnifying-glass"  id="buscarBtn"></i></a>
                 </input>
             </div>
         </div>
@@ -32,12 +32,12 @@
         <a href="./login.html"><button class="btnLogin">Login</button></a>
         </div>
         <div class="lupaResponsive">
-          <button type="button" class="searchBtn" data-searchBtn><i class="fa-solid fa-magnifying-glass"></i></button>
+          <button type="button" class="searchBtn" id="searchResponsiveBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
             
         </div>
-        <div class="searchResponsive" data-search>
+        <div class="searchResponsive" id="searchResponsive">
                 <div class="searchResponsive__container" >
-                    <input type="text" placeholder="¿Qué deseas buscar?" data-searchInput>
+                    <input type="text" placeholder="¿Qué deseas buscar?" id="inputResponsive">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
@@ -126,7 +126,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script type="text/javascript" src="./assets/js/search.js"></script>
+     <script type="module" src="./controllers/search.controller.js"></script>
     <script type="text/javascript" src="./assets/js/validation.js"></script>
     <script type="module" src="./controllers/agregar.controller.js"></script>
 </body>
