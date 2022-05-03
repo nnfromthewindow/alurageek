@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>AluraGeek - Editar producto</title>
+    <title>AluraGeek - Buscar Producto</title>
     <link href="./assets/css/normalize.css" rel="stylesheet" />
     <link href="./assets/css/reset.css" rel="stylesheet" />
-     <link href="./assets/css/banner.css" rel="stylesheet" />
-    <link href="./assets/css/agregarProducto.css" rel="stylesheet" />
+    <link href="./assets/css/banner.css" rel="stylesheet" />
     <link href="./assets/css/navbar.css" rel="stylesheet" />
+    <link href="./assets/css/editar.css" rel="stylesheet" />
+    <link href="./assets/css/login.css" rel="stylesheet" />
     <link href="./assets/css/contacto.css" rel="stylesheet" />
     <link href="./assets/css/footer.css" rel="stylesheet" />
     <link href="./assets/css/responsive.css" rel="stylesheet" />
@@ -21,10 +22,10 @@
 <body>
     <header class="header">
         <div class="search">
-             <a href="./index.html"><div class="logo"></div></a>
+            <a href="./index.html"><div class="logo"></div></a>
             <div class="search__input">
-                <input type="text" placeholder="¿Qué deseas buscar?" id="buscarInput">
-                <a><i class="fa-solid fa-magnifying-glass" id="buscarBtn"></i></a>
+                <input type="text" placeholder="¿Qué deseas buscar?"  id="buscarInput">
+                <a><i class="fa-solid fa-magnifying-glass"  id="buscarBtn"></i></a>
                 </input>
             </div>
         </div>
@@ -37,49 +38,23 @@
         </div>
         <div class="searchResponsive" id="searchResponsive">
                 <div class="searchResponsive__container" >
-                    <input type="text" placeholder="¿Qué deseas buscar?" data-searchInput>
+                    <input type="text" placeholder="¿Qué deseas buscar?" id="inputResponsive">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
     </header>
-   <section class="agregarProducto">
-    <div class="agregarProducto__contenedor">
-        <h1>Editar producto</h1>
-        <div class="cuadroFlex">
-            <div class="cuadroArrastre" draggable="true" data-cuadro>
-                <div data-clear>
-                <div class="imgCarpeta"><i class="fa-solid fa-image"></i></div>
-                <div class="imgMas"><i class="fa-solid fa-plus"></i></div>
-                <h3>Arrastre para agregar una imagen para el producto</h3>
-                <h4>Agregar una imagen para el producto</h4>
-                </div>
-            </div>
-            <h5>O</h5>
-            <button class="searchFileBtn" id="buscarBtn">Busque en su computador</button>
+   <section class="productosLista">
+    <div class="productosLista__contenedor">
+        <div class="tituloProducto__contenedor">
+            <h1>Resultado busqueda:</h1>
+            <a href="./index.html"><button>Volver</button></a>    
         </div>
-        <form  class="formularioAgregar" id="dataForm">
-            <div class="input__nuevoNombre">
-                <h4>Nombre del producto</h4>
-                <input type="text" id="nombre" pattern="^\S+\w.*" required>
-            </div>
-            <div class="input__nuevoPrecio">
-                <h4>Precio del producto</h4>
-                <input type="text" id="precio" name="precio" pattern="([0-9].*[,][0-9][0-9])" required>
-            </div>
-            <label for="categoriaPrincipal" class="categoriaLabel">Categoria</label>
-            <select name="categoriaPrincipal" id="categoriaPrincipal" class="input__nuevaCategoria">
-                <option value="">Star Wars</option>
-                <option value="">Consolas</option>
-                <option value="">Diversos</option>
-            </select>
+        <div class="listaProductos__contenedor">
+            <ul class="listaProductosEditables" id="listaBusqueda">
             
-            <div class="input__nuevoDescripcion">
-                <h4>Descripción del producto</h4>
-                <textarea id="descripcion" required></textarea>
-            </div>
-            
-            <button type="submit" class="agregarProd__btn" id="sendBtn">Editar producto</button>
-        </form>
+            </ul>
+        </div>
+        </div>
     </div>
 
    </section>
@@ -115,20 +90,13 @@
         </div>
     </section>
     <footer class="footer">
-        <div class="footer__container">
         <h4>Desarrollado por Nicolás Nuccelli</h4>
         <h4>2022</h4>
-</div>
-    </footer>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
-      integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script type="text/javascript" src="./assets/js/search.js"></script>
-    <script type="text/javascript" src="./assets/js/validation.js"></script>
-    <script type="module" src="./controllers/edit.controller.js"></script>
-</body>
 
+    </footer>
+    <script type="module" src="./assets/js/search.js"></script>
+    
+
+</body>
+</body>
 </html>

@@ -31,7 +31,7 @@ const obtenerInformacion = () => {
   }
 
   productServices
-    .productObtener(id)
+    .detalleProducto(id)
     .then(({ productoImg, nombre, precio, descripcion }) =>
       productoPagina(productoImg, nombre, precio, descripcion)
     )
@@ -41,7 +41,7 @@ obtenerInformacion();
 
 const url = new URL(window.location);
 const categoria = url.searchParams.get("categoria");
-console.log(categoria);
+
 const obtenerSimilares = async (categoria) => {
   if (categoria === null) {
     alert("Ha ocurrido un error");
