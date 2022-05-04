@@ -39,7 +39,7 @@ const processFile = (file) => {
   }
 };
 
-const buscarImg = document.getElementById("buscarBtn");
+const buscarImg = document.getElementById("buscarImagenDisco");
 
 buscarImg.addEventListener("click", importData);
 
@@ -73,15 +73,15 @@ function validarNombre() {
 }
 nombre.addEventListener("focus", validarNombre);
 
-function validarPrecio() {
-  let reg = /([,][0-9][0-9])/g;
-  if (!precio.value.match(reg)) {
-    precio.setCustomValidity("Ingrese un precio con coma(,) y dos decimales");
-  } else {
-    precio.setCustomValidity("");
+precio.addEventListener("blur", () => {
+  if (precio.value != "") {
+    var valor = precio.value;
+    valor = valor.replace(",", ".");
+    valor = parseFloat(valor);
+    valor = valor.toLocaleString("ES-ar");
+    precio.value = valor;
   }
-}
-precio.addEventListener("focus", validarPrecio);
+});
 
 formulario.addEventListener("submit", (e) => {
   e.preventDefault();

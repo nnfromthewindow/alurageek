@@ -28,3 +28,26 @@ formRegister.addEventListener("submit", async (e) => {
     alert("Las dos contraseñas no coinciden, intentelo de nuevo");
   }
 });
+function validarPass() {
+  let reg = /^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{6,12}$/g;
+  if (!password.value.match(reg)) {
+    password.setCustomValidity(
+      "La contraseña debe comenzar con mayuscula, al menos contener un numero y tener entre 6 y 12 caracteres"
+    );
+  } else {
+    password.setCustomValidity("");
+  }
+}
+password.addEventListener("input", validarPass);
+
+function validarRePass() {
+  let reg = /^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{6,12}$/g;
+  if (!repassword.value.match(reg)) {
+    repassword.setCustomValidity(
+      "La contraseña debe comenzar con mayuscula, al menos contener un numero y tener entre 6 y 12 caracteres"
+    );
+  } else {
+    repassword.setCustomValidity("");
+  }
+}
+repassword.addEventListener("input", validarRePass);
