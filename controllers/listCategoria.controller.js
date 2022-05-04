@@ -31,7 +31,7 @@ const obtenerInformacion = async (categoria) => {
                     </div>
                     <h3 class="nombreProducto">${item.nombre}</h3>
                     <h3 class="precio">${item.precio}</h3>
-                    <a href="./producto.html?id=${item.id}"><h3 class="verProducto">Ver Producto</h3></a>`;
+                    <a href="./producto.html?id=${item.id}&categoria=${item.categoriaPrincipal}"><h3 class="verProducto">Ver Producto</h3></a>`;
       li.innerHTML = lineaItem;
       listaCategoria.appendChild(li);
     });

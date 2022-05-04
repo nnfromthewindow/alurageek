@@ -4,20 +4,27 @@ const buscarBtn = document.getElementById("buscarBtn");
 var buscarInput = document.getElementById("buscarInput");
 const searchResponsiveBtn = document.getElementById("searchResponsiveBtn");
 const searchResponsive = document.getElementById("searchResponsive");
-var searchInput = document.getElementById("inputResponsive");
+var searchInputResponsive = document.getElementById("inputResponsive");
+const buscarBtnResponsive = document.getElementById("buscarBtnResponsive");
 
 searchResponsiveBtn.addEventListener("click", () => {
   searchResponsive.style.opacity = 1;
-  searchInput.focus();
+  searchInputResponsive.focus();
 });
 
-searchInput.addEventListener("blur", () => {
+searchInputResponsive.addEventListener("blur", () => {
   searchResponsive.style.opacity = 0;
 });
 
 buscarBtn.addEventListener("click", (e) => {
   var texto = buscarInput.value;
   window.location.href = `../buscar.html?buscar=${texto}`;
+});
+
+buscarBtnResponsive.addEventListener("click", (e) => {
+  var texto = searchInputResponsive.value;
+  window.location.href = `../buscar.html?buscar=${texto}`;
+  console.log(texto);
 });
 
 const listaBusqueda = document.getElementById("listaBusqueda");

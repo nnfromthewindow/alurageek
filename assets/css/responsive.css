@@ -62,11 +62,9 @@
     width: 254px;
     height: 157px;
   }
-  .exitoso {
-    height: 30vh;
-  }
+
   .exitoso h1 {
-    font-size: 18px;
+    font-size: 32px;
   }
 }
 
