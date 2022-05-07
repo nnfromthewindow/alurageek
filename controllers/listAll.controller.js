@@ -29,7 +29,7 @@ const listaProductosTodos = (
   const edit = linea.querySelector(`#edit-${id}`);
 
   edit.addEventListener("click", () => {
-    window.location.href = `../edit-product.html?id=${id.replace("edit-", "")}`;
+    window.location.href = `edit-product.html?id=${id.replace("edit-", "")}`;
   });
 
   borrar.addEventListener("click", () => {
