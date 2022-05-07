@@ -22,7 +22,7 @@ formRegister.addEventListener("submit", async (e) => {
       .userRegister(email.value, password.value)
 
       .then(() => {
-        window.location.href = "../regexitoso.html";
+        window.location.href = "regexitoso.html";
       });
   } else {
     alert("Las dos contraseñas no coinciden, intentelo de nuevo");
