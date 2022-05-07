@@ -13,7 +13,7 @@ formLogin.addEventListener("submit", (e) => {
       data.forEach(({ email, password }) => {
         if (email == mail.value && password == pass.value) {
           valid = true;
-          window.location.href = "../lista-user.html";
+          window.location.href = "/lista-user.html";
         }
       });
       console.log(valid);
