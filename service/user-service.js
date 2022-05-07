@@ -1,8 +1,10 @@
 const userGet = () =>
-  fetch(`http://localhost:3000/usuario/`).then((response) => response.json());
-
+  fetch(`https://alurageekwebstore.herokuapp.com/usuario`).then((response) =>
+    response.json()
+  );
+//para usar json-server usar esta direccion http://localhost:3000/usuario/
 const userRegister = (email, password) => {
-  return fetch(`http://localhost:3000/usuario/`, {
+  return fetch(`https://alurageekwebstore.herokuapp.com/usuario`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

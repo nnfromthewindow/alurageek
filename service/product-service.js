@@ -1,15 +1,17 @@
 const productLista = () =>
-  fetch("http://localhost:3000/producto").then((response) => response.json());
-
+  fetch("https://alurageekwebstore.herokuapp.com/producto").then((response) =>
+    response.json()
+  );
+//para usar json-server hacer los fetch en http://localhost:3000/producto
 const productDelete = (id) => {
-  return fetch(`http://localhost:3000/producto/${id}`, {
+  return fetch(`https://alurageekwebstore.herokuapp.com/producto/${id}`, {
     method: "DELETE",
   });
 };
 
 const detalleProducto = (id) => {
-  return fetch(`http://localhost:3000/producto/${id}`).then((response) =>
-    response.json()
+  return fetch(`https://alurageekwebstore.herokuapp.com/producto/${id}`).then(
+    (response) => response.json()
   );
 };
 
@@ -21,7 +23,7 @@ const productEdit = (
   categoriaPrincipal,
   id
 ) => {
-  return fetch(`http://localhost:3000/producto/${id}`, {
+  return fetch(`https://alurageekwebstore.herokuapp.com/producto/${id}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
@@ -43,7 +45,7 @@ const productNew = (
   productoImg,
   categoriaPrincipal
 ) => {
-  return fetch(`http://localhost:3000/producto/`, {
+  return fetch(`https://alurageekwebstore.herokuapp.com/producto`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
