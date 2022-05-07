@@ -1,5 +1,5 @@
 const productLista = () =>
-  fetch("https://alurageekwebstore.herokuapp.com/producto").then((response) =>
+  fetch("https://alurageekwebstore.herokuapp.com/producto/").then((response) =>
     response.json()
   );
 //para usar json-server hacer los fetch en http://localhost:3000/producto
@@ -45,7 +45,7 @@ const productNew = (
   productoImg,
   categoriaPrincipal
 ) => {
-  return fetch(`https://alurageekwebstore.herokuapp.com/producto`, {
+  return fetch(`https://alurageekwebstore.herokuapp.com/producto/`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
