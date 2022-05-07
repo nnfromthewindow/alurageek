@@ -18,12 +18,12 @@ searchInputResponsive.addEventListener("blur", () => {
 
 buscarBtn.addEventListener("click", (e) => {
   var texto = buscarInput.value;
-  window.location.href = `./buscar.html?buscar=${texto}`;
+  window.location.href = `buscar.html?buscar=${texto}`;
 });
 
 buscarBtnResponsive.addEventListener("click", (e) => {
   var texto = searchInputResponsive.value;
-  window.location.href = `./buscar.html?buscar=${texto}`;
+  window.location.href = `buscar.html?buscar=${texto}`;
   console.log(texto);
 });
 
