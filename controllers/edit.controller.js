@@ -137,6 +137,6 @@ formulario.addEventListener("submit", (e) => {
   productServices
     .productEdit(nombre, precio, descripcion, img, categoriaPrincipal, id)
     .then(() => {
-      window.location.href = "lista-user.html";
+      window.location.href = "./lista-user.html";
     });
 });

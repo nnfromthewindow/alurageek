@@ -104,7 +104,7 @@ formulario.addEventListener("submit", (e) => {
         categoriaPrincipal.options[categoriaPrincipal.selectedIndex].text
       )
       .then(() => {
-        document.location.href = "agrego-correcto.html";
+        document.location.href = "./agrego-correcto.html";
       })
       .catch((err) => alert("Ocurrió un error"));
   }
