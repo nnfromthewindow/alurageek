@@ -14,6 +14,7 @@ cuadro.addEventListener("drop", (e) => {
   const file = e.dataTransfer.files[0];
   processFile(file);
 });
+cuadro.addEventListener("click", importData);
 
 var urlImageUpload = "";
 
